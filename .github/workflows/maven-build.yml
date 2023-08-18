@@ -28,8 +28,7 @@ jobs:
       - name: Build with Maven Wrapper
         run: ./mvnw -B package
       - name: Debug
-        run: ls -alh
-        run: ls /target/
+        run: ls -alh && ls /target/
       - name: Manifest Generation
         run: |
           export BILLY_SERVER=https://billy.codesec.aquasec.com
